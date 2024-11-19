@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <label for="task_all">Все</label>
+    <input name="task_filter" id="task_all" type="radio">
+    <label for="task_done">Выполненные</label>
+    <input name="task_filter" id="task_done" type="radio">
+    <label for="task_undone">Невыполненные</label>
+    <input name="task_filter" id="task_undone" type="radio">
+    <ul class="task_list">
+        <li class="task">
+            <span class="task_name"></span>
+            <input type="checkbox" class="task_done">
+            <button class="task_delete"></button>
+        </li>
+    </ul>
+    <input class="task_input" type="text"><button class="task_add">Добавить задачу</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
